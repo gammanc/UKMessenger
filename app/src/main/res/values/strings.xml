@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">UKMessenger</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_groups">Grupos</string>
+    <string name="title_contacts">Contactos</string>
+    <string name="new_group">Nuevo grupo</string>
+    <string name="m_register_success">Registro exitoso</string>
+    <string name="m_save_success">Guardado con éxito</string>
+    <string name="e_user_required">Usuario requerido</string>
+    <string name="e_pass_required">Contraseña requerida</string>
+    <string name="settings">Configuración</string>
+    <string name="logout">Cerrar Sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

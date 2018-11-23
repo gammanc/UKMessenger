@@ -1,6 +1,7 @@
 package com.ukmessenger.gamma.ukmessenger.Contacts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.ukmessenger.gamma.ukmessenger.Chat.ChatActivity;
 import com.ukmessenger.gamma.ukmessenger.Model.User;
 import com.ukmessenger.gamma.ukmessenger.R;
 
@@ -36,6 +38,12 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
         holder.contactLetter.setText(String.valueOf(user.getName().charAt(0)));
         holder.contactName.setText(user.getName());
         holder.contactCaption.setText(user.getCarnet() + " - " + user.getStatus());
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ChatActivity.class);
+            intent.putExtra("userId", user.getUid());
+            context.startActivity(intent);
+        });
     }
 
     @Override

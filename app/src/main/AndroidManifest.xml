@@ -20,9 +20,11 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".SettingsActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Main.MainActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main.MainActivity" />
         </activity>
+        <activity android:name=".Chat.ChatActivity"></activity>
     </application>
 
 </manifest>

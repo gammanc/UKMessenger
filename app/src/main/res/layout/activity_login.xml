@@ -94,19 +94,19 @@
             android:background="@drawable/button_shape"
             android:layout_gravity="center"
             android:text="Registrar"
+            android:visibility="gone"
             app:spinning_bar_color="#fff"
             app:spinning_bar_padding="8dp"
-            android:visibility="gone"
             app:spinning_bar_width="4dp"/>
 
 
-        <TextView
-            android:id="@+id/linkScanID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:text="O escanea tu carnet"
-            android:textColor="@color/colorAccent" />
+        <!--<TextView-->
+            <!--android:id="@+id/linkScanID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="O escanea tu carnet"-->
+            <!--android:textColor="@color/colorAccent" />-->
     </LinearLayout>
 </ScrollView>

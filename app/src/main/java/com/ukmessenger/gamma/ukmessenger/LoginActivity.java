@@ -24,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private CircularProgressButton btnLogin, btnRegister;
     private TextInputEditText txtUser, txtPassword;
-    private TextView linkScanID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.btnRegister);
         txtUser = findViewById(R.id.txt_user);
         txtPassword = findViewById(R.id.txt_password);
-        linkScanID = findViewById(R.id.linkScanID);
     }
 
     void login(){
@@ -81,6 +79,11 @@ public class LoginActivity extends AppCompatActivity {
                     txtUser.setEnabled(true);
                     txtPassword.setEnabled(true);
                 });
+            }
+            else {
+                btnLogin.revertAnimation();
+                txtUser.setEnabled(true);
+                txtPassword.setEnabled(true);
             }
         });
     }

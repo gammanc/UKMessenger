@@ -96,6 +96,7 @@
             android:text="Registrar"
             app:spinning_bar_color="#fff"
             app:spinning_bar_padding="8dp"
+            android:visibility="gone"
             app:spinning_bar_width="4dp"/>
 
 

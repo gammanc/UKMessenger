@@ -24,7 +24,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Main.MainActivity" />
         </activity>
-        <activity android:name=".Chat.ChatActivity"></activity>
+        <activity android:name=".Chat.ChatActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
     </application>
 
 </manifest>
